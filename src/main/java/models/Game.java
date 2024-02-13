@@ -119,6 +119,31 @@ public class Game {
         return false;
     }
 
+    public void undo() {
+        if(moves.size()==0){
+            System.out.println("No moves to undo ");
+            return ;
+        }
+        Move lastMove = moves.get(moves.size() - 1);
+        moves.remove(lastMove);
+
+        Cell cell = lastMove.getCell();
+        cell.setPlayer(null);
+        cell.setCellState(CellState.EMPTY);
+
+        for(WinningStrategy winningStrategy: winningStrategies){
+            winningStrategy.handleUndo(board, lastMove);
+        }
+
+        if(nextPlayerIndex!=0){
+            nextPlayerIndex--;
+        }
+        else{
+            nextPlayerIndex = playerList.size()-1;
+        }
+
+    }
+
     public static class Builder {
         private List<Player> players;
         private int dimension;

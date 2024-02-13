@@ -37,6 +37,17 @@ public class App {
 
         while(GameState.IN_PROG.equals(game.getGameState())) {
             gameController.printBoard(game);
+
+            // if somebody wants to make an undo
+
+            System.out.println("Does anyone want to undo ? (y/n");
+            String undo = scanner.next();
+
+            if(undo.equalsIgnoreCase("y")){
+                gameController.undo(game);
+                continue;
+            }
+
             gameController.makeMove(game);
         }
 

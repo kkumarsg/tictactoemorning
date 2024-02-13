@@ -50,16 +50,22 @@ public class DiagonalWinningStrategy implements WinningStrategy{
 
     }
 
+    @Override
+    public void handleUndo(Board board, Move lastMove) {
+        Character symbol = lastMove.getPlayer().getSymbol();
+        int row = lastMove.getCell().getRow();
+        int col = lastMove.getCell().getCol();
 
+        // check if move was part of left diagonal
+        if(row==col){
+            leftDiaMpa.put(symbol, leftDiaMpa.get(symbol)-1);
+        }
 
-
-
-
-
-
-
-
-
+        // check if move was part of right diagonal
+        if(row+col==(board.getDimension()-1)){
+            rightDiaMpa.put(symbol, rightDiaMpa.get(symbol)-1);
+        }
+    }
 
 
 }

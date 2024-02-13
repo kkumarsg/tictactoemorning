@@ -31,4 +31,29 @@ public class RowWinningStrategy implements WinningStrategy{
 
         return false;
     }
+
+    @Override
+    public void handleUndo(Board board, Move lastMove) {
+        int row = lastMove.getCell().getRow();
+        Character symbol = lastMove.getPlayer().getSymbol();
+
+        Map<Character, Integer> rowMap = rowMaps.get(row);
+        rowMap.put(symbol, rowMap.get(symbol)-1);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
