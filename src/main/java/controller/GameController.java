@@ -22,6 +22,10 @@ public class GameController {
                 .build();
     }
 
+    public void makeMove(Game game){
+        game.makeMove();
+    }
+
     public void printBoard(Game game){
 
         game.printBoard();

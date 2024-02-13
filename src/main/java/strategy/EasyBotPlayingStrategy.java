@@ -7,6 +7,8 @@ import models.CellState;
 import java.util.List;
 
 public class EasyBotPlayingStrategy implements BotPlayingStrategy{
+
+    // return the first empty cell
     @Override
     public Cell makeMove(Board board) {
         for(List<Cell> row: board.getBoard()){

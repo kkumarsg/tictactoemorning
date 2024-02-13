@@ -5,14 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2106cca1-2dad-495f-96a7-3b7149c1472b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/PlayerType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Bot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/HumanPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/HumanPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/strategy/ColWinningStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/strategy/ColWinningStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/strategy/DiagonalWinningStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/strategy/DiagonalWinningStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/strategy/EasyBotPlayingStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/strategy/EasyBotPlayingStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/strategy/RowWinningStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/strategy/RowWinningStrategy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,14 +45,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "full.screen.before.presentation.mode": "false",
-    "last_opened_file_path": "/Users/keerthikumarsg/Desktop/tictactoeMorning/src/main/java/models"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/keerthikumarsg/Desktop/tictactoeMorning/src/main/java/models&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="factories" />
@@ -62,11 +65,11 @@
   </component>
   <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="models.App" />
+      <option name="MAIN_CLASS_NAME" value="app.App" />
       <module name="tictactoeMorning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="models.*" />
+          <option name="PATTERN" value="app.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
